@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background-image: url(./imagen-fondo.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Orbitron', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
+  color: #000000b4;
+  border-radius: 50px;
+  border: #fff 1px solid;
+  padding: 30px;
+}
+
+.calculadora {
+  width: 314px;
+  margin: 0 auto;
+  background-color: #ffffffaf;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #f8f8f8;
+}
+
+#pantalla {
+  width: 90%;
+  padding: 10px;
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: right;
+  font-family: 'Orbitron', sans-serif;
+}
+
+input[type="text"] {
+  background-image: linear-gradient(to top, #d5dee7 0%, #ffafbd 0%, #c9ffbf 100%);
+}
+
+input[type="button"] {
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+  width: 70px;
+  height: 40px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  background-color: #3a3939;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="button"]:hover {
+  background-color: #ffffffe5;
+  color: rgb(0, 0, 0);
+  border: 1px solid black;
+}
+
+input[type="button"]:last-child {
+  margin-right: 0;
+  color: rgb(234, 255, 43);
+  font-weight: 500;
+}
+
+input[type="button"]:last-child:hover {
+  background-color: black;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .calculadora {
+    max-width: 300px;
+    max-height: 300px;
+    margin-bottom: 40px;
+  }
+
+  input[type="button"] {
+    width: 55px;
+    height: 35px;
+    font-size: 15px;
+  }
+
+  h1 {
+    font-size: medium;
+  }
+}
